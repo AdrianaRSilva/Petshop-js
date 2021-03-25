@@ -1,6 +1,6 @@
 const nomePetshop = "PETSHOP AVANADE";
 
-let pets = [
+let pe ts = [
     {
         nome: 'pingo',
         tipo: 'cachorro',
@@ -49,14 +49,8 @@ const listarPets = () => {
 const campanhaVacina = () => {
     let cont = 0;
     for(let pet of pets)
-    {
-        if(pet.vacinado == false)
-        {
-            pet.vacinado = true;
-            cont++;
-        }
-    }
-    console.log(`${cont} pets vaciados`)
+    
+      console.log(`${cont} pets vaciados`)
 }
 
 // listarPets();
