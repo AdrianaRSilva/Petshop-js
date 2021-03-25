@@ -40,12 +40,15 @@ let pets=[
 ];
 
  const listarPets = () => {
-     for(let i = 0 ; 1 < pets.length; i++)
-     {
-       console.log(pets[i].nome);
-     }
+     
+        // template string
+        for (let pet of pets){
+            // template string
+          console.log(` ${pet.nome}, ${ pet.tipo},${pet.raca}´);  
+        }
+        
+      }
     
+  listarPets();
 
- }
- listarPets();
 //console.log(pets);
