@@ -40,7 +40,7 @@ let pets=[
 ];
 
  const listarPets = () => {
-     for(let i = 0 ; 1 > pets.length; i++)
+     for(let i = 0 ; 1 < pets.length; i++)
      {
        console.log(pets[i].nome);
      }
