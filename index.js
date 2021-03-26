@@ -23,7 +23,7 @@ let pets = [
         tutor: 'Manoel',
         contato: '(81) 98578 7553',
         vacinado: false,
-        servicos: ['Banho']
+        servicos: 'Banho'
     },
     {
         nome: 'Chica',
@@ -42,105 +42,82 @@ const listarPets = () => {
     // for(let i = 0; i < pets.length; i++){
     for(let pet of pets){
         
-        console.log(`O nome do pet é: ${pet.nome}`);
+        console.log(`${pet.nome}, ${pet.idade}, ${ pet.tipo}, ${pet.raca}`);
     }
 }
 
 
 const vacinarPet = () => {
-    let nomev = "cachorro";
-    for(let pet of pets){
-        if(pet.nome == nomev)
+           if(!pet.vacinado)
         {
-            if(pet.vacinado == true)
-            {
-                console.log(`Ops, ${pet.nome} já está vacinado!`);
+            pet.vacinado = true
+            console.log(`${pet.nome} foi vacinado com sucesso!`);
             }
             else
             {
-                pet.vacinado = true;
-                console.log(`${pet.nome} foi vacinado com sucesso!`);
+              console.log(` Ops, ${pet.nome} já está vacinado!`);
             }
         }
-    }
-}
+    
+
 
 const campanharVacina = () => {
+    console.log("Campanha de vacina 2020");
+    console.log("vacinando...");
     let cont = 0;
     for(let pet of pets)
     {
-        if(pet.vacinado == false)
+        if(!pet.vacinado)
         {
-            pet.vacinado = true;
+            pet.vacinado (pet);
             cont++;
         }
     }
     console.log(`${cont} pets foram vaciados nessa campanha!`)
-}
- const adicionarPet = () => {
-      
-        let novoPet={
-            nome:'xena',
-            tipo: 'Gato',
-            idade: 4,
-            raca: 'Vira-lata',
-            peso: 10,
-            tutor: 'Maria',
-            contato:'(81) 9856-4720',
-            vacinado: false,
-            servicos: ['banho', 'tosa']   
+};
+const adicionarPet = novoPet => {
+    if (typeof novoPet == "object" && validarDados(novoPet)) {
+        // adiciona o pet
+        novoPet.nome = String(novoPet.nome);git
+        novoPet.idade = parseInt(novoPet.idade);
+
+        if (!novoPet.servicos) {
+            novoPet.servicos = [];
         }
+
         pets.push(novoPet);
-       
-     }
-     
-     const darBanhoPet =() =>{
-        let nomep = "Pingo";
-        for(let pet of pets){
-        
-            if(pet.nome== nomep){
-                pet.servicos.push("banho");
-                console.log(`${pet.nome}, Banho ok!`)
-                console.log(`este serviço ocorreu em ${moment().format('L')}`)
-            }
-        }
-        
-     }
-     const tosarPet=()=>{
-        let nomep= "Pingo";
-    
-        for(let pet of pets){
-            
-            if(pet.nome == nomep){
-                pet.servicos.push("tosa");
-                console.log(`${pet.nome}, está tosada!`)
-                console.log(`este serviço ocorreu em ${moment().format('L')}`)
-            }
-        }
-    
-     }
-     const apararUnhasPet=()=>{
-        let unhap= "Pingo";
-    
-        for(let pet of pets){
-            
-            if(pet.nome == unhap){
-                pet.servicos.push("tosa");
-                console.log(`${pet.nome}, Unha cortada!`)
-                console.log(`este serviço ocorreu em ${moment().format('L')}`)
-            }
-        }
-    
-     }
-     
-        listarPets();
-        campanharVacina();
-        adicionarPet();
-        tosarPet();
-        darBanhoPet();
-        apararUnhasPet();
+    } else {
+        console.log("Ops, insira um argumento valido!");
+    }
+}
+
+const darBanhoPet = pet => {
+    pet.servicos.push({
+        'serviço':'banho',
+        'data': moment().format('DD-MM-YYYY')
+    });
+    console.log(`${pet.nome} está de banho tomado!`);
+};
+
+const tosarPet = pet => {
+    pet.servicos.push({
+        'serviço':'tosa',
+        'data': moment().format('DD-MM-YYYY')
+    });
+    console.log(`${pet.nome} está com cabelinho na régua :)`);
+};
+
+const apararUnhasPet = pet => {
+    pet.servicos.push({
+        'serviço':'corte de unhas',
+        'data': moment().format('DD-MM-YYYY')
+    });
+    console.log(`${pet.nome} está de unhas aparadas!`);
+};
 
 
+darBanhoPet(pets[0]);
+console.log(pets[0]);
     
     
       
