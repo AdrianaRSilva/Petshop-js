@@ -1,6 +1,6 @@
 const moment= require('moment')
 
-const nomePetshop = "PETSHOP AVANADE";
+const nomePetshop = "PETSHOP-JS";
 
 let pets = [
     {
