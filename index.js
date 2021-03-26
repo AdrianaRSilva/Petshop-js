@@ -78,7 +78,7 @@ const campanharVacina = () => {
 const adicionarPet = novoPet => {
     if (typeof novoPet == "object" && validarDados(novoPet)) {
         // adiciona o pet
-        novoPet.nome = String(novoPet.nome);git
+        novoPet.nome = String(novoPet.nome);
         novoPet.idade = parseInt(novoPet.idade);
 
         if (!novoPet.servicos) {
