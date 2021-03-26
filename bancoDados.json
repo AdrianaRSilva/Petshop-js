@@ -1,0 +1,33 @@
+{
+                "pets":[{
+        "nome": "chica",
+        "tipo": "passaro",
+        "peso": 0.200,
+        "raca": "jandaia",
+        "tutor": "Maria",
+        "contato":"(81) 983787-5458",
+        "vacinado": "false",
+        "servicos": "vacina"
+    },
+    {
+            "nome": "Mel",
+            "tipo": "coelho",
+            "peso": 2,
+            "raca": "lop",
+            "tutor": "João",
+            "contato": "(81) 98287-7506",
+            "vacinado": true,
+            "servicos": "['vacina','banho','corte de unha']"
+    },
+    {
+        "nome": "pingo",
+        "tipo": "cachorro",
+       "peso":  4,
+        "raca":"pinstcher",
+        "tutor": "Ana",
+        "contato": "(81) 98500-8484",
+        "vacinado": true,
+        "servicos":"['vacina','banho','tosa','corta unha']"
+                } 
+        ]
+    }   

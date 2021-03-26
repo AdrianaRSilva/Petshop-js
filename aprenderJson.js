@@ -1,8 +1,8 @@
-const moment= require('moment');
-const nomePetshop =" PETSHOP-JS"
-const bancoDados = require('./bancoDados.json');
+const moment= require('moment')
+const fs=require('fs');
+const bancoDados=fs.readFileSync('dadoPets.json', 'utf8');
 
-let pets = bancoDados.pets
+const nomePetshop =" PETSHOP-JS"
 
 const listarPets=()=>{
 for(let pet of pets){
@@ -15,10 +15,15 @@ console.log(`${pet.nome}, ${ pet.tipo}, ${pet.raca}, ${pet.vacinado}`);
      if(!pet.vacinado)
      {
          pet.vacinado = true
-         console.log(`${pet.nome}, vacinado com sucesso `);
+         console.log(`${pet.nome}, vacinado com sucesso `)
      }
      else
-     console.log(`Ops,${pet.nome}, ja esta vacinado`);
+     console.log(`Ops,${pet.nome}, ja esta vacinado`)
+ }
+}
+ 
+ const campanharVacina = () => {
+    console.log("Campanha de vacinação 2021");
     console.log("Vacinado ...");
     
      let cont= 0;
@@ -70,16 +75,12 @@ console.log(`${cont} Pets vacinado!`);
                  });
                  console.log(`${pet.nome} está com unhas ok :`);  
                 };
- }
 
 //console.log(pets[1]);
-listarPets();
-///campanharVacina(pets[1]);
+listarPets(pets[1]);
+//campanharVacina(pets[1]);
 //vacinarPet(pets[1]);
 //banhoPet(pets[1]);
 //tosarPet(pets[1]);
 //unhaPet(pets[1]);
-
-
-console.log("-----------")
-listarPets();
+console.log(dadosPet);
