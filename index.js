@@ -32,22 +32,21 @@ console.log(`${pet.nome}, ${ pet.tipo}, ${pet.raca}, ${pet.vacinado}`);
 console.log(`${cont} Pets vacinado!`);
 }
 
- const novoCliente = novoPet =>
-  {
-    if (typeof novoPet == "object" && validarDados(novoPet))
-{
-    novoPet.nome = String(novoPet.nome);
-    novoPet.idade =perseInt(novoPet.idade);
-    if(!novoPet.servicos){
-        novoPet.servicos =[];
+ const novoCliente = () =>{
+ let novoPet={
+  nome: " princesa",
+  tipo: "cachorro",
+  peso:  4,
+  raca:"viralata",
+ tutor: "Marcos",
+ contato: "(81) 98500-8454",
+ vacinado: true,
+ servicos:['vacina','banho','tosa','corta unha']
+         } 
+         pets,push(novoPet);
         }
-        pets.push(novoPet);
-        }
-        else{
-            console.log(" insira um argumento valido!")
 
-        }
-    }
+    
     const banhoPet = pet => {
         pet.servicos.push({
             'serviço':'banho',
