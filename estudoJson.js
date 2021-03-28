@@ -1,4 +1,4 @@
-let bancoDados = require("./dadospets.json")
+let bancoDados = require("./bancoDados.json")
 
 let pets = bancoDados.pets;
 

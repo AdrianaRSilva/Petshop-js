@@ -32,7 +32,7 @@ console.log(`${pet.nome}, ${ pet.tipo}, ${pet.raca}, ${pet.vacinado}`);
 console.log(`${cont} Pets vacinado!`);
 }
 
- const adicionarPet = novoPet =>
+ const novoCliente = novoPet =>
   {
     if (typeof novoPet == "object" && validarDados(novoPet))
 {
@@ -74,8 +74,7 @@ console.log(`${cont} Pets vacinado!`);
 
 //console.log(pets[1]);
 listarPets();
-///campanharVacina(pets[1]);
-//vacinarPet(pets[1]);
+vacinarPet(pets[1]);
 //banhoPet(pets[1]);
 //tosarPet(pets[1]);
 //unhaPet(pets[1]);
