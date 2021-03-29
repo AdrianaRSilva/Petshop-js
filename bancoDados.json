@@ -1,106 +1,68 @@
 {
   "pets": [
     {
-      "nome": "Pigo",
+      "nome": "Pingo",
       "tipo": "cachorro",
-      "idade": 5,
+      "idade": 4,
       "raca": "",
       "peso": 3,
-      "tutor": "Doug",
-      "contato": "(11) 98899-4545",
+      "tutor": "Ana",
+      "contato": "(81) 98899-4545",
       "vacinado": false,
-      "servicos": [
-        {
-          "nome": "banho",
-          "data": "29-03-2021"
-        }
-      ]
+      "servicos": "['banha', 'tosa', corta unha']"
     },
     {
-      "nome": "Snoopy",
-      "tipo": "cachorro",
-      "idade": 13,
-      "raca": "Beagle",
-      "peso": 5,
-      "tutor": "Charlie Brown",
-      "contato": "(11) 95656-4545",
+      "nome": "chica",
+      "tipo": "coelho",
+      "idade": 3,
+      "raca": "mini lop",
+      "peso": 2,
+      "tutor": "David",
+      "contato": "(81) 98349-8484",
       "vacinado": true,
-      "servicos": []
+      "servicos": "['banha', 'tosa', corta unha']"
     },
     {
-      "nome": "Satanas",
-      "tipo": "gato",
-      "idade": 5,
-      "raca": "Vira-lata",
+      "nome": "Mel",
+      "tipo": "gata",
+      "idade": 4,
+      "raca": "indefinada",
       "peso": 3,
-      "tutor": "Bruxa do 71",
-      "contato": "(11) 97171-7171",
+      "tutor": "Angela",
+      "contato": "(81) 98570-1853",
       "vacinado": true,
-      "servicos": []
+      "servicos": "['banha', 'tosa', corta unha']"
     },
     {
-      "nome": "Ada",
-      "tipo": "cachorro",
-      "idade": 1,
-      "raca": "Vira-lata",
-      "peso": 18,
-      "tutor": "Pedro",
-      "contato": "(11) 98899-4545",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Ada",
-      "tipo": "cachorro",
-      "idade": 1,
-      "raca": "Vira-lata",
-      "peso": 18,
-      "tutor": "Pedro",
-      "contato": "(11) 98899-4545",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Ada",
-      "tipo": "cachorro",
-      "idade": 1,
-      "raca": "Vira-lata",
-      "peso": 18,
-      "tutor": "Pedro",
-      "contato": "(11) 98899-4545",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Ada",
-      "tipo": "cachorro",
-      "idade": 1,
-      "raca": "Vira-lata",
-      "peso": 18,
-      "tutor": "Pedro",
-      "contato": "(11) 98899-4545",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Pedrita",
-      "tipo": "cachorro",
-      "idade": 10,
-      "raca": "Pastor Alemão",
-      "peso": 18,
-      "tutor": "João",
-      "contato": "(11) 98899-9999",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Romarinho",
+      "nome": "Pitoco",
       "tipo": "cachorro",
       "idade": 3,
-      "raca": "American",
-      "peso": 28,
-      "tutor": "Bruno",
-      "contato": "(11) 99999-9999",
+      "raca": "vira lata",
+      "peso": 6,
+      "tutor": "Eduardo",
+      "contato": "(81) 9859-9070",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Pitoco",
+      "tipo": "cachorro",
+      "idade": 3,
+      "raca": "vira lata",
+      "peso": 6,
+      "tutor": "Eduardo",
+      "contato": "(81) 9859-9070",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Pitoco",
+      "tipo": "cachorro",
+      "idade": 3,
+      "raca": "vira lata",
+      "peso": 6,
+      "tutor": "Eduardo",
+      "contato": "(81) 9859-9070",
       "vacinado": true,
       "servicos": []
     },

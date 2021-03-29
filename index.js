@@ -1,3 +1,5 @@
+
+const nomeLoja= "PetShop-js"
 const moment = require('moment');
 const fs = require('fs');
 let bancoDados = fs.readFileSync('./bancoDados.json', 'utf-8');
@@ -16,17 +18,14 @@ const listarPets = () => {
         //template string
         console.log(`${pet.nome}, ${pet.idade} anos, ${pet.tipo}, ${pet.raca}, ${(pet.vacinado) ? 'vacinado': 'não vacinado'}`);
 
-        for (const servico of pet.servicos) {
-            console.log(`${servico.data} - ${servico.nome}`);
-        }
-    }
+       }
 }
 
 const vacinarPet = pet => {
     if (!pet.vacinado) {
         pet.vacinado = true;
         atualizarBanco();
-        console.log(`${pet.nome} foi vacinado com sucesso!`);
+        console.log(`${pet.vacinado} foi vacinado com sucesso!`);
     } else {
         console.log(`Ops, ${pet.nome} já está vacinado!`);
     }
@@ -80,12 +79,18 @@ const apararUnhasPet = pet => {
     console.log(`${pet.nome} está de unhas aparadas!`);
 };
 
+const atenderCliente = (pet, servico) => {
+    console.log(`Olá ,${pet.nome} seja bem vindo!`)
+    servico(pet)
+    console.log('volte smepore')
+}
+
 // darBanhoPet(bancoDados.pets[1]);
 
-// console.log("-----------")
-// listarPets();
-
-adicionarPet({
+   
+   // listarPets();
+ //atenderCliente()
+  adicionarPet({
    "nome": "Pitoco",
      "tipo": "cachorro",
      "idade": 3,    
@@ -95,5 +100,5 @@ adicionarPet({
    "contato": "(81) 9859-9070",
     "vacinado": true,
     "servicos": []})
-
+  
     
