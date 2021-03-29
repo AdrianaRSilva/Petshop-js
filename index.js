@@ -25,8 +25,9 @@ const vacinarPet = pet => {
     if (!pet.vacinado) {
         pet.vacinado = true;
         atualizarBanco();
-        console.log(`${pet.vacinado} foi vacinado com sucesso!`);
-    } else {
+        let vacina = pet.vacinado
+        vacina == true ? vacina = "foi vacinado com sucesso!": vacina ="já está vacinado!"; 
+        
         console.log(`Ops, ${pet.nome} já está vacinado!`);
     }
 }
@@ -78,18 +79,18 @@ const apararUnhasPet = pet => {
     atualizarBanco();
     console.log(`${pet.nome} está de unhas aparadas!`);
 };
-
-const atenderCliente = (pet, servico) => {
-    console.log(`Olá ,${pet.nome} seja bem vindo!`)
+    const atenderCliente = (pet, servico) => {
+    console.log(`Olá, ${pet.nome} seja bem vindo!`)
     servico(pet)
     console.log('volte smepore')
 }
+
 
 // darBanhoPet(bancoDados.pets[1]);
 
    
    // listarPets();
- //atenderCliente()
+ atenderCliente()
   adicionarPet({
    "nome": "Pitoco",
      "tipo": "cachorro",

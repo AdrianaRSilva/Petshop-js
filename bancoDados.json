@@ -43,39 +43,6 @@
       "contato": "(81) 9859-9070",
       "vacinado": true,
       "servicos": []
-    },
-    {
-      "nome": "Pitoco",
-      "tipo": "cachorro",
-      "idade": 3,
-      "raca": "vira lata",
-      "peso": 6,
-      "tutor": "Eduardo",
-      "contato": "(81) 9859-9070",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Pitoco",
-      "tipo": "cachorro",
-      "idade": 3,
-      "raca": "vira lata",
-      "peso": 6,
-      "tutor": "Eduardo",
-      "contato": "(81) 9859-9070",
-      "vacinado": true,
-      "servicos": []
-    },
-    {
-      "nome": "Pitoco",
-      "tipo": "cachorro",
-      "idade": 3,
-      "raca": "vira lata",
-      "peso": 6,
-      "tutor": "Eduardo",
-      "contato": "(81) 9859-9070",
-      "vacinado": true,
-      "servicos": []
     }
   ]
 }
