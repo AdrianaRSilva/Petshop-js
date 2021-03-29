@@ -6,32 +6,29 @@ let pets = bancoDados.pets
 
 const listarPets=()=>{
 for(let pet of pets){
-console.log(`${pet.nome}, ${ pet.tipo}, ${pet.raca}, ${pet.vacinado}`);
+console.log(`${pet.nome}, ${ pet.tipo}, ${pet.raca}`);
 }
+console.log('--------x--------')
 }
  
- const vacinarPet =( )=> {
+ const vacinarPet =(pet)=> {
     for(let pet of pets){
-     if(!pet.vacinado)
-     {
-         pet.vacinado = true
-         console.log(`${pet.nome}, vacinado com sucesso `);
-     }
-     else
-     console.log(`Ops,${pet.nome}, ja esta vacinado`);
-    console.log("Vacinado ...");
+   var vacinado = pet.vacinado == true? 'Já está Vacinado!': 'vacinado com sucesso!' //if ternaria
+   console.log(`${pet.nome}, ${vacinado}`)
+    }
+    console.log('------------x-----------') 
+   let cont= 0;
+   let conta = 0;
+   for(let pet of pets)
+   {
+     let contador = pet.vacinado == true? cont++: " ";
+     let contando =pet.vacinado == false? conta++: ""
+     
+    } 
+    let soma= cont + conta
+    console.log(`Total de pets vacinados : ${soma} `)
     
-     let cont= 0;
-     for(let pet of pets)
-    {
-        if(pet.vacinado == true)
-         {
-            cont ++ ;
-        }
-   }
-console.log(`${cont} Pets vacinado!`);
-}
-
+    
  const novoCliente = () =>{
  let novoPet={
   nome: " princesa",
@@ -61,6 +58,7 @@ console.log(`${cont} Pets vacinado!`);
              });
              console.log(`${pet.nome} está com pelos ok :)`);
             };
+            
              const unhaPet = pet =>
              {
                 pet.servicos.push({
@@ -70,10 +68,10 @@ console.log(`${cont} Pets vacinado!`);
                  console.log(`${pet.nome} está com unhas ok :`);  
                 };
  }
-
+ 
 //console.log(pets[1]);
 listarPets();
-vacinarPet(pets[1]);
+vacinarPet()
 //banhoPet(pets[1]);
 //tosarPet(pets[1]);
 //unhaPet(pets[1]);

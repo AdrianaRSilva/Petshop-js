@@ -6,14 +6,14 @@
         "raca": "jandaia",
         "tutor": "Maria",
         "contato":"(81) 983787-5458",
-        "vacinado": "false",
+        "vacinado": false,
         "servicos": "vacina"
     },
     {
             "nome": "Mel",
             "tipo": "coelho",
             "peso": 2,
-            "raca": "lop",
+            "raca": "mini",
             "tutor": "João",
             "contato": "(81) 98287-7506",
             "vacinado": true,
